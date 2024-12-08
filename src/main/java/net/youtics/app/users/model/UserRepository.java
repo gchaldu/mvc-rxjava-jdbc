@@ -103,6 +103,7 @@ public class UserRepository implements UserInterface {
 
             PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.setLong(1, id);
+            preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
             throw new RuntimeException(e);

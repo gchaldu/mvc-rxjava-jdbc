@@ -28,14 +28,13 @@ public class Main {
             System.out.println("Ingrese 's' para Salir");
 
             String ok = scanner.nextLine();
-            if("s".equalsIgnoreCase(ok)){
-                break;
-            }
 
             if("1".equalsIgnoreCase(ok)){
                 controller.addUser();
             }else if("2".equalsIgnoreCase(ok)){
                 controller.deleteUser();
+            }else if("s".equalsIgnoreCase(ok)){
+                break;
             }
         }
     }
